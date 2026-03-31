@@ -17,10 +17,13 @@ function getHumanChoice() {
 // One round logic!
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
+        console.log("It's a tie!")
     } else if (humanChoice === "rock" && computerChoice === "scissors" || humanChoice === "paper" && computerChoice === "rock" || humanChoice === "scissors" && computerChoice === "paper" ) {
         humanScore += 1;
+        console.log(`You win ${humanChoice} beat ${computerChoice}`)
     } else {
         computerScore += 1;
+        console.log(`Computer win ${computerChoice} beat ${humanChoice}`)
     }
 }
 
