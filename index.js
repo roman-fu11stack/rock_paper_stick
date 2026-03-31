@@ -1,9 +1,9 @@
-const items = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let computerScore = 0;
 
 // Random computer choice
 function getComputerChoice() {
+    const items = ['rock', 'paper', 'scissors'];
     const randomItem = items[Math.floor(Math.random() * items.length)];
     return randomItem
 }
